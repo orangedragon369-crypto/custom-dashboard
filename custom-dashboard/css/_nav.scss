@@ -1,0 +1,22 @@
+@use "variables.scss";
+
+nav {
+    width: 20%;
+    background-color: secondary-color;
+    padding: 15px;
+    max-width: 250px;
+
+    li {
+        list-style: none;
+        margin-bottom: 10px;
+
+        a {
+            text-decoration: none;
+            margin-bottom: 10px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
