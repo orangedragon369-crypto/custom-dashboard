@@ -1,0 +1,8 @@
+@use "variables.scss";
+@use "nav.scss";
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
