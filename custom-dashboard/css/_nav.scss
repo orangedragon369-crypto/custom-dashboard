@@ -1,27 +1,27 @@
-@use "variables.scss";
 @use "var.scss";
+
 body {    
     display: flex;     
     flex-direction: column;   
     height: 100vh;
-    background-color: var.$color-3;
+    background-color: var.$textColor;
     
 }
 
-.header {
+header {
     display: flex;
-    background-color: var.$primary-color;
-    color: var.$color-3;
+    background-color: var.$primaryColor;
+    color: var.$textColor;
     padding: 0 16px;
     align-items: center;
     justify-content: space-between;
     .menubutton {
         background: none;
-        color: var.$color-3;
+        color: var.$textColor;
         border: none;
         cursor: pointer;
         &:hover {
-            color: var.$secondary-color;
+            color: var.$secondaryColor;
         }
 
     }
@@ -46,7 +46,7 @@ form {
     border: 1px ;
     border-radius: 10px;
     padding: 4px 12px;
-    background-color: var.$color-3;
+    background-color: var.$textColor;
     input {
         margin: 0;
         outline: none;
@@ -59,10 +59,10 @@ form {
     .searchbutton {
         border: none;
         background: none;
-        color: var.$secondary-color;
+        color: var.$secondaryColor;
         cursor: pointer;
         &:hover {
-            color: variables.$primary-color;
+            color: var.$primaryColor;
         }
     }
     
@@ -72,14 +72,14 @@ form {
     align-items: center;
     cursor: pointer;
     &:hover {
-        color: var.$secondary-color;
+        color: var.$secondaryColor;
     }
     .userlog {
         text-decoration: none;
-        color: var.$color-3;
+        color: var.$textColor;
 
         &:hover {
-        color: var.$secondary-color;
+        color: var.$secondaryColor;
         }
     }
 }
@@ -90,8 +90,8 @@ form {
     flex: 1;
     overflow: hidden;
     aside{
-        background-color: var.$primary-color;
-        width: 260px;
+        background-color: var.$primaryColor;
+        width: 300px;
         height: 100%;
         overflow-y: auto;
         transition: transform 0.3s ease;
@@ -101,17 +101,20 @@ form {
 }
 .top {
     display: flex;
-    background-color:var.$color-4;
+    background-color:var.$primaryColor;
     .website-logo{
-        color: var.$color-3;
+        color: var.$textColor;
     }
     .close {
-        color: var.$color-3;
+        color: var.$textColor;
     }
 }
 
 .sidebar {
     display: flex;
-    
+    flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+}
