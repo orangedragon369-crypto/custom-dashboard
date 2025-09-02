@@ -1,0 +1,8 @@
+$primaryColor: #000040;
+$secondaryColor: #3a3a71;
+$textColor: #FFFFFF;
+
+@mixin boxbackground {
+    background-color: $secondaryColor;
+    border-radius: 5px;
+}
