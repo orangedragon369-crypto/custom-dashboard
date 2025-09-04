@@ -1,5 +1,8 @@
 @use "var.scss";
 
+#dashboard {
+    display: none;
+}
 body {    
     display: flex;     
     flex-direction: column;   
@@ -85,20 +88,22 @@ form {
 }
 
  //tranfer the next css codes to a single file//
-aside{
+ .aside{
+    position: absolute;
+    left: 0;
     display: flex;
     flex: 1;
     overflow: hidden;
     background-color: var.$primaryColor;
-    width: 300px;
-    height: 110%;
+    width: 200px;
+    height: 100%;
     overflow-y: auto;
     transition: transform 0.3s ease;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     z-index: 90;
 }
 
-aside .top {
+.aside .top {
     color:var.$secondaryColor;
     .website-logo{
         color: var.$textColor;
@@ -115,7 +120,7 @@ aside .top {
 .sidebar {
     display: flex;
     flex-direction: column;
-    position: relative;
+    background-color: var.$primaryColor;
 }
     
 a   {
@@ -127,7 +132,8 @@ a   {
     position: relative;
     height: 3.5rem;
     cursor: pointer;
-    &:hover {
-        color: var.$secondaryColor;
-    }
+}
+
+h3:hover {}
+    color: var.$secondaryColor;
 }
